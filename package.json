@@ -1,0 +1,12 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "description": "Blog preview card challenge from Frontend Mentor",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
