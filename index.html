@@ -12,13 +12,24 @@
       href="assets/images/favicon-32x32.png"
     />
     <link href="styles/output.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body
     class="bg-brand-yellow h-screen flex flex-col items-center justify-center space-y-4 font-figtree"
   >
     <article
-      class="bg-brand-white flex flex-col space-y-3 w-80 mx-auto border border-brand-black rounded-xl p-4 shadow-solid"
+      x-data="{ hovered: false }"
+      @mouseover="hovered = true"
+      @mouseout="hovered = false"
+      :class="{
+    'translate-x-0 translate-y-0 shadow-solid transition-all duration-200 ease-in': !hovered,
+    '-translate-x-4 -translate-y-4 shadow-hover transition-all duration-200 ease-out': hovered
+  }"
+      class="bg-brand-white flex flex-col space-y-3 w-80 mx-auto border border-brand-black rounded-xl p-4"
     >
       <!-- Image is purely decorative, so empty alt text -->
       <img

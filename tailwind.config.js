@@ -16,6 +16,7 @@ module.exports = {
       },
       boxShadow: {
         solid: "8px 8px 0px 0px hsl(0, 0%, 7%)",
+        hover: "16px 16px 0px 0px hsl(0, 0%, 7%)",
       },
     },
   },
