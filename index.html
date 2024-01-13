@@ -14,27 +14,40 @@
     <link href="styles/output.css" rel="stylesheet" />
     <title>Frontend Mentor | Blog preview card</title>
   </head>
-  <body>
-    <article>
+  <body
+    class="bg-brand-yellow h-screen flex flex-col items-center justify-center space-y-4 font-figtree"
+  >
+    <article
+      class="bg-brand-white flex flex-col space-y-3 w-80 mx-auto border border-brand-black rounded-xl p-4 shadow-solid"
+    >
       <!-- Image is purely decorative, so empty alt text -->
-      <img src="assets/images/illustration-article.svg" alt="" />
+      <img
+        src="assets/images/illustration-article.svg"
+        alt=""
+        class="rounded-lg"
+      />
       <ul>
-        <li>Learning</li>
+        <li
+          class="text-sm font-semibold bg-brand-yellow w-fit px-3 py-1 rounded"
+        >
+          Learning
+        </li>
       </ul>
-      <time datetime="2023-12-21 20:00">Published 21 Dec 2023</time>
-      <h1>HTML & CSS Foundations</h1>
-      <p>
+      <time datetime="2023-12-21 20:00" class="text-sm"
+        >Published 21 Dec 2023</time
+      >
+      <h1 class="text-xl font-bold">HTML & CSS foundations</h1>
+      <p class="text-sm text-brand-grey">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>
-      <div>
+      <div class="flex flex-row space-x-2 items-center mb-2">
         <img
           src="assets/images/image-avatar.webp"
           alt="A headshot of a man in front of a white brick wall"
+          class="h-6"
         />
-        <div>
-          <p>Greg Hooper</p>
-        </div>
+        <p class="text-xs font-bold">Greg Hooper</p>
       </div>
     </article>
     <div class="text-xs text-center">
