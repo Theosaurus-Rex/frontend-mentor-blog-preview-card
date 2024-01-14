@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +21,7 @@
   <main
     class="bg-brand-yellow h-screen flex flex-col items-center justify-center space-y-4 font-figtree"
   >
-    <article
+    <div
       x-data="{ hovered: false }"
       @mouseover="hovered = true"
       @mouseout="hovered = false"
@@ -46,7 +47,15 @@
       <time datetime="2023-12-21 20:00" class="text-sm"
         >Published 21 Dec 2023</time
       >
-      <h1 class="text-xl font-bold">HTML & CSS foundations</h1>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
+      >
+        <h1
+          class="text-xl font-bold hover:cursor-pointer hover:text-brand-yellow"
+        >
+          HTML & CSS foundations
+        </h1>
+      </a>
       <p class="text-sm text-brand-grey">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
@@ -59,7 +68,7 @@
         />
         <p class="text-xs font-bold">Greg Hooper</p>
       </div>
-    </article>
+    </div>
     <div class="text-xs text-center">
       Challenge by
       <a
